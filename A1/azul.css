@@ -6,8 +6,8 @@ body
 
 header
 {
-    background-color: rgb(65, 209, 209);
-    color: white;
+    background-color: rgb(96, 169, 238);
+    color: rgb(46, 94, 252);
     text-align: left;
     padding: 1%;
     display: flex;
@@ -39,8 +39,8 @@ textarea
 
 .boton
 {
-    background-color: rgb(65, 209, 209);
-    color: white;
+    background-color:  rgb(96, 169, 238);
+    color: rgb(46, 94, 252);
     border: none;
     border-radius: 4px;
     padding: 13px;
@@ -49,6 +49,7 @@ textarea
 
 .h2
 {
+    color: rgb(46, 94, 252);
     margin-left: 2%;
 }
 

@@ -4,38 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santiago Vela</title>
-    <link rel="stylesheet" href="css.css">
+    <link id="estilo" rel="stylesheet" type="text/css" href="css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Klee+One&family=Nosifer&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body id="body">
     <div class="header">
-    <header>
-        <a href="#" class="Blocdenotas">Bloc de notas</a>
-
-        <nav class="navbar">
-            <a>
-            <label for="text">Tema:</label>
-            <select name="text" id="tema">
-                <option value="Claro" >🌞Claro</option>
-                <option value="Claro" style="background-color:rgb(0, 0, 0)" style="color: white;">🌙Oscuro</option>
-                <option value="Claro" style="background-color:rgb(23, 63, 192);">🌊azul</option>
-                <option value="Claro" style="background-color:rgb(217, 93, 229);">🌸Rosa</option>
-                <option value="Claro" style="background-color:rgb(72, 212, 95);">🍃Verde</option>
+        <header id="header">
+            <a href="#" class="Blocdenotas">Bloc de notas</a>
+    
+            <nav class="navbar">
+                <a>
+                <label id="label" for="tema">Tema:</label>
+                <select id="tema" onchange="hojaEstilo(tema.value)">
+                <option class="claro" value="claro" style="background-color: white;">🌞Claro</option>
+                <option class="oscuro" value="oscuro" style="background-color:rgb(0, 0, 0); color: white;">🌙Oscuro</option>
+                <option class="azul" value="azul" style="background-color:rgb(23, 63, 192);">🌊azul</option>
+                <option class="rosa" value="rosa" style="background-color:rgb(217, 93, 229);">🌸Rosa</option>
+                <option class="verde" value="verde" style="background-color:rgb(72, 212, 95);">🍃Verde</option>
             </select>
-            </a>
-        </nav>
-    </header>
+                </a>
+            </nav>
+        </header>
+        </div>
+    
+    <div class="contenido">
+            <form class="form2">
+                <textarea name="notas" id="textarea" rows="10" cols="250" placeholder="Escribe tu nombre aqui..." required></textarea><br>
+                <input class="boton" value="Añadir nota" type="submit">
+                </form>
+        </form>
+        <h2 class="h2">Notas</h2>
+        <h3 class="h3">Todavía no hay notas 🍃🍃</h3>
     </div>
 
-    <div>
-        <form class="formulario">
-        <textarea rows="10" cols="250" placeholder="Escribe tu nombre aqui..." required></textarea><br>
-        <input class="boton" type="submit">
-        </form>
-    </div>
+    <script>
+        function hojaEstilo(tema)
+        {
+        let estilo=document.getElementById("estilo")
+        switch (tema) 
+        {
+            case "claro":
+                estilo.setAttribute("href", "claro.css")
+            break;
+            case "oscuro":
+                estilo.setAttribute("href", "oscuro.css")
+            break;
+            case "azul":
+                estilo.setAttribute("href", "azul.css")
+            break;
+            case "rosa":
+                estilo.setAttribute("href", "rosa.css")
+            break;
+            case "verde":
+                estilo.setAttribute("href", "verde.css")
+            break;
+        }
+        }
+    </script>
 
 </body>
 </html>
