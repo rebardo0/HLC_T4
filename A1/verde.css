@@ -2,12 +2,11 @@ body
 {
     margin: 0;
     font-family: "Sour Gummy", sans-serif;;
-    background-color:  rgb(187, 214, 240);
+    background-color: rgb(173, 233, 198);
 }
-
 header
 {
-    background-color: rgb(96, 169, 238);
+    background-color: rgb(75, 243, 145);
     color: white;
     text-align: left;
     padding: 1%;
@@ -18,7 +17,7 @@ header
 
 .Blocdenotas
 {
-    color: rgb(46, 94, 252);
+    color:rgb(1, 151, 64);
     text-decoration: none;
     font-weight: 500;
     font-size: 280%;
@@ -27,12 +26,12 @@ header
 .navbar a
 {
     font-size: 180%;
-    color:rgb(46, 94, 252);
+    color:rgb(1, 151, 64);
 }
 
 textarea
 {
-    background-color: rgb(213, 219, 241);;
+    background-color: rgb(215, 243, 227) ;
     margin-top: 2%;
     margin-bottom: 1%;
     margin-left: 2%;
@@ -41,8 +40,8 @@ textarea
 
 .boton
 {
-    background-color:  rgb(96, 169, 238);
-    color: rgb(46, 94, 252);
+    background-color: rgb(75, 243, 145);
+    color: rgb(1, 151, 64);
     border: none;
     border-radius: 4px;
     padding: 13px;
@@ -51,7 +50,7 @@ textarea
 
 .h2
 {
-    color: rgb(46, 94, 252);
+    color: rgb(1, 151, 64);
     margin-left: 2%;
 }
 
